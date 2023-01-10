@@ -4,9 +4,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View>
-        <Text>Another piece of text</Text>
+        <Text style={styles.textContainer}>Another piece of text</Text>
       </View>
-      <Text style={{margin: 16, borderWidth: 2, borderColor: 'red', padding: 16}}>Hello World!</Text>
+      <Text style={styles.textContainer}>Hello World!</Text>
       <Button title='Tap Me!' />
     </View>
   );
@@ -20,6 +20,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   textContainer: {
-    
+    margin: 16,
+    padding: 16,
+    borderWidth: 2,
+    borderColor: 'blue',
   }
 });
